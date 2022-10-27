@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_website/screens/home_screen/home.dart';
 
-void main() => runApp(const MyApp());
+main()  => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
