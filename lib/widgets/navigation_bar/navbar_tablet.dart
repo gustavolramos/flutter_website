@@ -16,7 +16,7 @@ class NavBarTablet extends StatelessWidget {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  NavBarItem(icon: Icons.info, title: 'Learn More')
+                  NavBarItem(icon: Icons.info, title: 'About')
                 ],
               ),
             ]
