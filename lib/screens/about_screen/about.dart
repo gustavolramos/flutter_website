@@ -10,11 +10,11 @@ class About extends StatelessWidget {
   Widget build(BuildContext context) {
     return CenteredView(
       child: Column(
-      children: <Widget>[
-        NavBar(),
-        AboutInfo(),
-      ],
-    ),
+        children: <Widget>[
+          NavBar(),
+          AboutInfo(),
+        ],
+      ),
     );
   }
 }
