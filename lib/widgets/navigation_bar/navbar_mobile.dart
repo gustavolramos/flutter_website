@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_website/widgets/navigation_bar/navbar_logo.dart';
-import 'package:my_first_website/widgets/navigation_drawer/navdrawer.dart';
 
 class NavBarMobile extends StatefulWidget {
    const NavBarMobile({Key? key}) : super(key: key);
@@ -20,10 +19,7 @@ class _NavBarMobileState extends State<NavBarMobile> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           IconButton(
-            onPressed: () {
-              setState(() {
-              NavigationDrawer();
-            });},
+            onPressed: () {},
             icon: Icon(Icons.menu),
             tooltip: 'Menu',
           ),
