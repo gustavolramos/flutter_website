@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
+import '../../screens/home_screen/home.dart';
 
 class NavBarLogo extends StatelessWidget {
   const NavBarLogo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(height: 80, width: 150,
-      child: Image.asset('assets/images/flutter_image_test.png')
+    return IconButton(
+      onPressed: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => HomePage()));
+      },
+      icon: Image.asset('assets/images/flutter_image_test.png'),
+      iconSize: 100,
+      splashRadius: 60,
     );
   }
 }

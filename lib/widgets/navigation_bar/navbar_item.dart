@@ -19,11 +19,16 @@ class _NavBarItemState extends State<NavBarItem> {
         Icon(widget.icon),
         SizedBox(width: 10),
         TextButton(
-            onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => About()));
-            },
-            child: Text(widget.title, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: Colors.black)))
-      ]
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => AboutPage()));
+          },
+          child: Text(widget.title,
+              style: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black)))
+    ]
     );
   }
 }

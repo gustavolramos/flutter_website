@@ -13,14 +13,7 @@ class NavBarTablet extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               NavBarLogo(),
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  NavBarItem(icon: Icons.info, title: 'About')
-                ],
-              ),
-            ]
-        )
-    );
+              NavBarItem(icon: Icons.info, title: 'About'),
+            ]));
   }
 }

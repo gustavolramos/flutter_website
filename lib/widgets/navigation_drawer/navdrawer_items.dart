@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 class NavDrawerItem extends StatelessWidget {
+  const NavDrawerItem(this.icon, this.title);
+
   final IconData icon;
   final String title;
-  const NavDrawerItem(this.icon, this.title);
 
   @override
   Widget build(BuildContext context) {
