@@ -6,19 +6,14 @@ class NavigationDrawerHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 120,
-      color: Colors.blue,
-      alignment: Alignment.center,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          Text('Got interested?',
-          style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.w800),
-          ),
-          Text('Choose an option below',
-          style: TextStyle(fontSize: 12, color: Colors.white,)
-          )
-        ],
+      width: 300,
+      height: 150,
+      decoration: BoxDecoration(
+        color: Colors.blue,
+      ),
+      child: Text(
+        'Drawer Header',
+        style: TextStyle(color: Colors.white, fontSize: 24),
       ),
     );
   }

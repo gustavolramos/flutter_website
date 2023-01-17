@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_website/screens/about_screen/about_page.dart';
+import 'package:my_first_website/screens/home_screen/home_page.dart';
 import 'package:my_first_website/widgets/navigation_drawer/navdrawer_header.dart';
-import 'package:my_first_website/widgets/navigation_drawer/navdrawer_items.dart';
+import '../navigation_bar/navbar_item.dart';
 
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({Key? key}) : super(key: key);
@@ -10,13 +12,15 @@ class NavigationDrawer extends StatelessWidget {
     return Container(
       width: 300,
       decoration: BoxDecoration(
-        color: Colors.white,
-        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 16)]),
+          color: Colors.white,
+          boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 10)]),
       child: Column(
         children: <Widget>[
           NavigationDrawerHeader(),
-          NavDrawerItem(Icons.info, 'About'),
-          NavDrawerItem(Icons.phone_android, 'Contact')
+          NavBarItem(
+              icon: Icons.house, title: 'About', pagedestination: HomePage()),
+          NavBarItem(
+              icon: Icons.info, title: 'About', pagedestination: AboutPage()),
         ],
       ),
     );

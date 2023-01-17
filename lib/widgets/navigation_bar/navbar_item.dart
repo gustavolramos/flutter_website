@@ -1,29 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_website/screens/about_screen/about.dart';
 
-class NavBarItem extends StatefulWidget {
-
-  const NavBarItem({Key? key, required this.icon, required this.title}) : super(key: key);
+class NavBarItem extends StatelessWidget {
+  const NavBarItem(
+      {Key? key,
+      required this.icon,
+      required this.title,
+      required this.pagedestination})
+      : super(key: key);
   final IconData icon;
   final String title;
+  final Widget pagedestination;
 
-  @override
-  State<NavBarItem> createState() => _NavBarItemState();
-}
-
-class _NavBarItemState extends State<NavBarItem> {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Icon(widget.icon),
-        SizedBox(width: 10),
-        TextButton(
+    return Row(children: [
+      Icon(icon),
+      SizedBox(width: 10),
+      TextButton(
           onPressed: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => AboutPage()));
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => pagedestination));
           },
-          child: Text(widget.title,
+          child: Text(title,
               style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.w400,

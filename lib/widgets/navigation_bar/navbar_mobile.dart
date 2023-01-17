@@ -3,19 +3,13 @@ import 'package:my_first_website/widgets/navigation_bar/navbar_logo.dart';
 import 'package:my_first_website/widgets/navigation_drawer/navdrawer.dart';
 
 class NavBarMobile extends StatefulWidget {
+  const NavBarMobile({super.key});
 
   @override
   State<NavBarMobile> createState() => _NavBarMobileState();
 }
 
 class _NavBarMobileState extends State<NavBarMobile> {
-  NavigationDrawer navigationDrawer = NavigationDrawer();
-
-  openNavDrawer() {
-    setState(() {
-      navigationDrawer;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +19,9 @@ class _NavBarMobileState extends State<NavBarMobile> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           IconButton(
-            onPressed: () => openNavDrawer(),
+            onPressed: () => setState(() {
+              NavigationDrawer();
+            }),
             icon: Icon(Icons.menu),
             tooltip: 'Menu',
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../screens/about_screen/about_page.dart';
 import 'navbar_item.dart';
 import 'navbar_logo.dart';
 
@@ -13,7 +14,10 @@ class NavBarTablet extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               NavBarLogo(),
-              NavBarItem(icon: Icons.info, title: 'About'),
+              NavBarItem(
+                  icon: Icons.info,
+                  title: 'About',
+                  pagedestination: AboutPage()),
             ]));
   }
 }
