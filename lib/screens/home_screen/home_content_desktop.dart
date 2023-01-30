@@ -7,12 +7,14 @@ class HomeContentDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        BodyInfo(),
-        BodyImage(),
-      ],
+    return Expanded(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          HomeInfo(),
+          HomeImage(),
+        ],
+      ),
     );
   }
 }

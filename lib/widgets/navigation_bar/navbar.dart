@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'navbar_mobile.dart';
-import 'navbar_tablet.dart';
+import 'navbar_desktop.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({Key? key}) : super(key: key);
@@ -15,7 +15,7 @@ class _NavBarState extends State<NavBar> {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       mobile: NavBarMobile(),
-      tablet: NavBarTablet(),
+      tablet: NavBarDesktop(),
     );
   }
 }

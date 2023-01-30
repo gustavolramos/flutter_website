@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class BodyImage extends StatelessWidget {
-  const BodyImage({Key? key}) : super(key: key);
+class HomeImage extends StatelessWidget {
+  const HomeImage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
-        children: [
+        children: const [
           CircleAvatar(
-            backgroundImage: AssetImage('assets/images/gustavo_profile_photo.jpg'),
+            backgroundImage:
+                AssetImage('assets/images/gustavo-profile-photo.jpg'),
             radius: 125,
           ),
-        ]
-    );
+        ]);
   }
 }

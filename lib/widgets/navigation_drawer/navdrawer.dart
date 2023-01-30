@@ -9,18 +9,33 @@ class NavigationDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 300,
-      decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 10)]),
-      child: Column(
+    return Drawer(
+      child: ListView(
         children: <Widget>[
-          NavigationDrawerHeader(),
-          NavBarItem(
-              icon: Icons.house, title: 'About', pagedestination: HomePage()),
-          NavBarItem(
-              icon: Icons.info, title: 'About', pagedestination: AboutPage()),
+          const NavigationDrawerHeader(),
+          SizedBox(
+            height: 100,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                  child: NavBarItem(
+                      icon: Icons.house,
+                      title: 'Home',
+                      pagedestination: HomePage()),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                  child: NavBarItem(
+                      icon: Icons.info,
+                      title: 'About',
+                      pagedestination: AboutPage()),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );

@@ -3,8 +3,8 @@ import '../../screens/about_screen/about_page.dart';
 import 'navbar_item.dart';
 import 'navbar_logo.dart';
 
-class NavBarTablet extends StatelessWidget {
-  const NavBarTablet({Key? key}) : super(key: key);
+class NavBarDesktop extends StatelessWidget {
+  const NavBarDesktop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class NavBarTablet extends StatelessWidget {
         child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              NavBarLogo(),
+              const NavBarLogo(),
               NavBarItem(
                   icon: Icons.info,
                   title: 'About',

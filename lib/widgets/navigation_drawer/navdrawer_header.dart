@@ -5,15 +5,20 @@ class NavigationDrawerHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 300,
-      height: 150,
-      decoration: BoxDecoration(
-        color: Colors.blue,
-      ),
-      child: Text(
-        'Drawer Header',
-        style: TextStyle(color: Colors.white, fontSize: 24),
+    return SizedBox(
+      height: 100,
+      child: DrawerHeader(
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: const BoxDecoration(color: Colors.blue),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            Text(
+              'Contact info below:',
+              style: TextStyle(color: Colors.white, fontSize: 24),
+            ),
+          ],
+        ),
       ),
     );
   }

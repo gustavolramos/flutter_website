@@ -7,6 +7,7 @@ class NavBarItem extends StatelessWidget {
       required this.title,
       required this.pagedestination})
       : super(key: key);
+
   final IconData icon;
   final String title;
   final Widget pagedestination;

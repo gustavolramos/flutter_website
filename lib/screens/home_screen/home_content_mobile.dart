@@ -11,9 +11,9 @@ class HomeContentMobile extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          BodyInfo(),
+          HomeInfo(),
           SizedBox(height: 50),
-          BodyImage(),
+          HomeImage(),
         ],
       ),
     );

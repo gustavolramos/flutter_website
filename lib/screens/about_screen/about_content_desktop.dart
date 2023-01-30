@@ -29,34 +29,36 @@ class AboutContentDesktop extends StatelessWidget {
           descriptionSize = 21;
         }
 
-        return Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'MY STORY',
-                  style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      height: 1.0,
-                      fontSize: titleSize),
-                  textAlign: textAlignment,
-                ),
-                Text('I was born and raised in Balneário Camboriú, Brazil',
+        return Expanded(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'MY STORY',
                     style: TextStyle(
-                        fontWeight: FontWeight.w200,
-                        height: 1.7,
-                        fontSize: descriptionSize),
-                    textAlign: textAlignment),
-              ],
-            ),
-            CircleAvatar(
-                backgroundImage:
-                    AssetImage('assets/images/hotel-bella-camboriu.jpg'),
-                radius: 125),
-          ],
+                        fontWeight: FontWeight.w600,
+                        height: 1.0,
+                        fontSize: titleSize),
+                    textAlign: textAlignment,
+                  ),
+                  Text('I was born and raised in Balneário Camboriú, Brazil',
+                      style: TextStyle(
+                          fontWeight: FontWeight.w200,
+                          height: 1.7,
+                          fontSize: descriptionSize),
+                      textAlign: textAlignment),
+                ],
+              ),
+              CircleAvatar(
+                  backgroundImage:
+                      AssetImage('assets/images/hotel-bella-camboriu.jpg'),
+                  radius: 125),
+            ],
+          ),
         );
       },
     );

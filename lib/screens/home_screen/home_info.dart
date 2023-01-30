@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-class BodyInfo extends StatelessWidget {
-  const BodyInfo({Key? key}) : super(key: key);
+class HomeInfo extends StatelessWidget {
+  const HomeInfo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
-      builder: (context, sizingInformation){
-
+      builder: (context, sizingInformation) {
         TextAlign textAlignment;
         if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
           textAlignment = TextAlign.left;
