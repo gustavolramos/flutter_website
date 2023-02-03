@@ -1,16 +1,24 @@
 # my_first_website
 
-My first website to practice flutter with a real example.
+In this project I try to exercise some basic but important Dart and Flutter concepts such as:
 
-In order to make this project work, you need to install both the Flutter and Dart plugins to your
-IDE, I'm currently using IntelliJ
+- Altering the project`s font family, weight, etc
+- Utilizing the "Responsive Builder" package to achieve responsivity
+- Utilizing assets
+- Navigating through different pages
+- Reutilizing Widgets through the app
+- Organizing project files, class names, variables, etc in a meaningful way
 
-You also need to download the Flutter SDK, which you can do from
-here: https://docs.flutter.dev/get-started/install
+## Requirements to run the project
 
-Some Bio sites I used as an inspiration:
+Android Studio or other IDE: http://bit.ly/3IWeWfC
+Flutter SDK: https://docs.flutter.dev/get-started/install
+Flutter and Dart Plugins for the IDE
+Open Sans fonts (https://fonts.google.com/specimen/Open+Sans)
+Responsive Builder package (https://pub.dev/packages/shared_preferences)
 
-- https://www.gatesnotes.com/
-- https://www.cristianoronaldo.com/#cr7
-- https://www.joerogan.com/
-- https://www.nikesb.com/team/paul-rodriguez
+### Disclaimer
+
+I created this alongisde a Filledstacks (https://www.youtube.com/@FilledStacks) video and improved things based on it.
+
+Feel free to give me feedback at any given time :) 
