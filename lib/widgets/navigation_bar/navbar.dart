@@ -14,8 +14,8 @@ class _NavBarState extends State<NavBar> {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: NavBarMobile(),
-      tablet: NavBarDesktop(),
+      mobile: const NavBarMobile(),
+      tablet: const NavBarDesktop(),
     );
   }
 }

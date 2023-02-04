@@ -9,7 +9,6 @@ class NavBarMobile extends StatefulWidget {
 }
 
 class _NavBarMobileState extends State<NavBarMobile> {
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,10 +18,10 @@ class _NavBarMobileState extends State<NavBarMobile> {
         children: <Widget>[
           IconButton(
             onPressed: () => Scaffold.of(context).openDrawer(),
-            icon: Icon(Icons.menu),
+            icon: const Icon(Icons.menu),
             tooltip: 'Menu',
           ),
-          NavBarLogo()
+          const NavBarLogo()
         ],
       ),
     );

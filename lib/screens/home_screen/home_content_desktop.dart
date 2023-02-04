@@ -10,7 +10,7 @@ class HomeContentDesktop extends StatelessWidget {
     return Expanded(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
+        children: const [
           HomeInfo(),
           HomeImage(),
         ],

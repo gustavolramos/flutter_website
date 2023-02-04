@@ -7,7 +7,7 @@ import '../../widgets/navigation_drawer/navdrawer.dart';
 import 'about_content_mobile.dart';
 
 class AboutPage extends StatelessWidget {
-  AboutPage({Key? key}) : super(key: key);
+  const AboutPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +19,11 @@ class AboutPage extends StatelessWidget {
           backgroundColor: Colors.white,
           body: CenteredView(
               child: Column(children: <Widget>[
-            NavBar(),
+            const NavBar(),
             Expanded(
                 child: ScreenTypeLayout(
-              mobile: AboutContentMobile(),
-              desktop: AboutContentDesktop(),
+              mobile: const AboutContentMobile(),
+              desktop: const AboutContentDesktop(),
             )),
           ]))),
     );

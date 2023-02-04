@@ -16,18 +16,17 @@ class NavBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(children: [
       Icon(icon),
-      SizedBox(width: 10),
+      const SizedBox(width: 10),
       TextButton(
           onPressed: () {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => pagedestination));
           },
           child: Text(title,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.w400,
                   color: Colors.black)))
-    ]
-    );
+    ]);
   }
 }

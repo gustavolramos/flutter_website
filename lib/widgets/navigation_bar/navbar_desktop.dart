@@ -12,8 +12,8 @@ class NavBarDesktop extends StatelessWidget {
         height: 100,
         child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              const NavBarLogo(),
+            children: const <Widget>[
+              NavBarLogo(),
               NavBarItem(
                   icon: Icons.info,
                   title: 'About',

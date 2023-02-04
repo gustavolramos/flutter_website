@@ -53,7 +53,7 @@ class AboutContentDesktop extends StatelessWidget {
                       textAlign: textAlignment),
                 ],
               ),
-              CircleAvatar(
+              const CircleAvatar(
                   backgroundImage:
                       AssetImage('assets/images/hotel-bella-camboriu.jpg'),
                   radius: 125),

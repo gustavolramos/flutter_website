@@ -10,7 +10,7 @@ class HomeContentMobile extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
+        children: const [
           HomeInfo(),
           SizedBox(height: 50),
           HomeImage(),

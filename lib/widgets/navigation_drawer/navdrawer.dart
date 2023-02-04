@@ -18,16 +18,16 @@ class NavigationDrawer extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: const [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                  padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                   child: NavBarItem(
                       icon: Icons.house,
                       title: 'Home',
                       pagedestination: HomePage()),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                  padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                   child: NavBarItem(
                       icon: Icons.info,
                       title: 'About',

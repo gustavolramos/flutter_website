@@ -46,8 +46,8 @@ class AboutContentMobile extends StatelessWidget {
                       fontWeight: FontWeight.w200,
                       height: 1.7,
                       fontSize: descriptionSize)),
-              SizedBox(height: 50),
-              CircleAvatar(
+              const SizedBox(height: 50),
+              const CircleAvatar(
                 backgroundImage:
                     AssetImage('assets/images/hotel-bella-camboriu.jpg'),
                 radius: 125,
