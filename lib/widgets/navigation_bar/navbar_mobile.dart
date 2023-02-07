@@ -11,7 +11,7 @@ class NavBarMobile extends StatefulWidget {
 class _NavBarMobileState extends State<NavBarMobile> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 100,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
