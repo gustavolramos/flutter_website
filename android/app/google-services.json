@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "826410718011",
+    "project_id": "gustavo-website",
+    "storage_bucket": "gustavo-website.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826410718011:android:13cfe093ff4df87de71d1e",
+        "android_client_info": {
+          "package_name": "com.gustavoramos.my_first_website"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826410718011-0b355kc83bb1ormuu4r80sl68q2jnjt5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoN23M8D4ZdwKLMzAvhNgmbIqf5rJmadc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826410718011-0b355kc83bb1ormuu4r80sl68q2jnjt5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "826410718011-g6u0nndf182iouic4ls2cnpm32m29ff5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.gustavoramos.myFirstWebsite"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
