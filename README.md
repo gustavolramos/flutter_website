@@ -8,6 +8,7 @@ In this project I try to exercise some basic but important Dart and Flutter conc
 - Navigating through different pages
 - Re-utilizing Widgets through the app
 - Organizing project files, class names, variables, etc in a meaningful way
+- Hosting the Project with Firebase
 
 ## Requirements to run the project
 
