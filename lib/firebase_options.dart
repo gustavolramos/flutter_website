@@ -70,8 +70,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '826410718011',
     projectId: 'gustavo-website',
     storageBucket: 'gustavo-website.appspot.com',
-    iosClientId:
-        '826410718011-g6u0nndf182iouic4ls2cnpm32m29ff5.apps.googleusercontent.com',
+    iosClientId: '826410718011-g6u0nndf182iouic4ls2cnpm32m29ff5.apps.googleusercontent.com',
     iosBundleId: 'com.gustavoramos.myFirstWebsite',
   );
 }

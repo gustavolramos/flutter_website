@@ -4,8 +4,8 @@ import 'package:my_first_website/screens/home_screen/home_page.dart';
 import 'package:my_first_website/widgets/navigation_drawer/navdrawer_header.dart';
 import '../navigation_bar/navbar_item.dart';
 
-class NavigationDrawer extends StatelessWidget {
-  const NavigationDrawer({Key? key}) : super(key: key);
+class MyNavigationDrawer extends StatelessWidget {
+  const MyNavigationDrawer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

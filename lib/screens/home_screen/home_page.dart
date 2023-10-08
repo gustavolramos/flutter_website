@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
           drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
-              ? const NavigationDrawer()
+              ? const MyNavigationDrawer()
               : null,
           backgroundColor: Colors.white,
           body: CenteredView(

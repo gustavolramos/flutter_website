@@ -14,16 +14,17 @@ class AboutPage extends StatelessWidget {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
           drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
-              ? const NavigationDrawer()
+              ? const MyNavigationDrawer()
               : null,
           backgroundColor: Colors.white,
           body: CenteredView(
-              child: Column(children: <Widget>[
-            const NavBar(),
-            Expanded(
-                child: ScreenTypeLayout(
-              mobile: const AboutContentMobile(),
-              desktop: const AboutContentDesktop(),
+              child: Column(
+                  children: <Widget>[
+                    const NavBar(),
+                    Expanded(
+                        child: ScreenTypeLayout(
+                          mobile: const AboutContentMobile(),
+                          desktop: const AboutContentDesktop(),
             )),
           ]))),
     );
