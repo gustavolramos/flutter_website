@@ -8,11 +8,11 @@ class NavBarDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return const SizedBox(
         height: 100,
         child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const <Widget>[
+            children: <Widget>[
               NavBarLogo(),
               NavBarItem(
                   icon: Icons.info,

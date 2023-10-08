@@ -11,14 +11,14 @@ class MyNavigationDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
-        children: <Widget>[
-          const NavigationDrawerHeader(),
+        children: const <Widget>[
+          NavigationDrawerHeader(),
           SizedBox(
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 Padding(
                   padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                   child: NavBarItem(

@@ -4,9 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
 main() async {
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
@@ -19,9 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'The Guto Website',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        textTheme: Theme.of(context).textTheme.apply(
-              fontFamily: 'Open Sans',
-            ),
+        textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Open Sans'),
       ),
       home: const HomePage(),
     );

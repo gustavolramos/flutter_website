@@ -5,10 +5,10 @@ class HomeImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
-        children: const [
+        children: [
           CircleAvatar(
             backgroundImage:
                 AssetImage('assets/images/gustavo-profile-photo.jpg'),
