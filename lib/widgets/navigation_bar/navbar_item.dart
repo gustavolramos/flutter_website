@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 
 class NavBarItem extends StatelessWidget {
-  const NavBarItem(
-      {Key? key,
-      required this.icon,
-      required this.title,
-      required this.pagedestination})
-      : super(key: key);
+  const NavBarItem({Key? key, required this.icon, required this.title, required this.pagedestination}) : super(key: key);
 
   final IconData icon;
   final String title;
@@ -16,17 +11,16 @@ class NavBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(children: [
       Icon(icon),
-      const SizedBox(width: 10),
       TextButton(
           onPressed: () {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => pagedestination));
+            Navigator.of(context).push(MaterialPageRoute(builder: (context) => pagedestination));
           },
           child: Text(title,
               style: const TextStyle(
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black)))
+                fontSize: 18.0,
+                fontWeight: FontWeight.w400,
+                color: Colors.black,
+              )))
     ]);
   }
 }

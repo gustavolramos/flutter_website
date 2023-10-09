@@ -5,18 +5,17 @@ class NavigationDrawerHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(
+    return  SizedBox(
       height: 100,
       child: DrawerHeader(
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-        decoration: BoxDecoration(color: Colors.blue),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        decoration: const BoxDecoration(color: Colors.blueGrey),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Text(
-              'Contact info below:',
-              style: TextStyle(color: Colors.white, fontSize: 24),
-            ),
+            IconButton(onPressed: (){}, icon: Image.asset('assets/images/logo-github-white.png')),
+            IconButton(onPressed: (){}, icon: Image.asset('assets/images/instagram.png')),
+            IconButton(onPressed: (){}, icon: Image.asset('assets/images/logo-twitter.png')),
           ],
         ),
       ),

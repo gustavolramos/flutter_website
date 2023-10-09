@@ -11,8 +11,8 @@ class HomeContentDesktop extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          HomeInfo(),
-          HomeImage(),
+          HomeInfo(titleText: 'WELCOME', bodyText: 'My name is Gustavo Ramos, I am a 26-year-old Product Manager and Flutter Developer. This is my first Flutter-made Website.'),
+          HomeImage(customAsset: 'assets/images/gustavo-profile-photo.jp'),
         ],
       ),
     );

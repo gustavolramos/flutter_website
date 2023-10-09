@@ -2,17 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class HomeInfo extends StatelessWidget {
-  const HomeInfo({Key? key}) : super(key: key);
+  const HomeInfo({super.key, required this.titleText, required this.bodyText});
+
+  final String titleText;
+  final String bodyText;
 
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
+        
         TextAlign textAlignment;
         if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
           textAlignment = TextAlign.left;
         } else {
-          textAlignment = TextAlign.left;
+          textAlignment = TextAlign.center;
+        }
+
+        CrossAxisAlignment crossAxisAlignment;
+        if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
+          crossAxisAlignment = CrossAxisAlignment.start;
+        } else {
+          crossAxisAlignment = CrossAxisAlignment.center;
         }
 
         double titleSize;
@@ -34,23 +45,24 @@ class HomeInfo extends StatelessWidget {
           child: SizedBox(
             width: 600,
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: crossAxisAlignment,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'WELCOME!',
+                  titleText,
                   style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      height: 1.0,
-                      fontSize: titleSize),
+                    fontWeight: FontWeight.w600,
+                    height: 1.0,
+                    fontSize: titleSize,
+                  ),
                   textAlign: textAlignment,
                 ),
-                Text(
-                    ('My name is Gustavo Ramos, I am a 25-year-old Product Owner at CoBlue and aspiring Flutter Developer. This is my first Flutter-made Website.'),
+                Text((bodyText),
                     style: TextStyle(
-                        fontWeight: FontWeight.w200,
-                        height: 1.7,
-                        fontSize: descriptionSize),
+                      fontWeight: FontWeight.w200,
+                      height: 1.7,
+                      fontSize: descriptionSize,
+                    ),
                     textAlign: textAlignment),
               ],
             ),
