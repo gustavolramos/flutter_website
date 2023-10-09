@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_website/utils/navigation.dart';
 
 class NavigationDrawerHeader extends StatelessWidget {
-  const NavigationDrawerHeader({Key? key}) : super(key: key);
+  NavigationDrawerHeader({Key? key}) : super(key: key);
+
+  final UrlLauncher urlLauncher = UrlLauncher();
 
   @override
-  Widget build(BuildContext context) {
-    return  SizedBox(
+  Widget build(BuildContext context) {  
+    return SizedBox(
       height: 100,
       child: DrawerHeader(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
@@ -13,9 +16,21 @@ class NavigationDrawerHeader extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            IconButton(onPressed: (){}, icon: Image.asset('assets/images/logo-github-white.png')),
-            IconButton(onPressed: (){}, icon: Image.asset('assets/images/instagram.png')),
-            IconButton(onPressed: (){}, icon: Image.asset('assets/images/logo-twitter.png')),
+            IconButton(
+              onPressed: () async => await urlLauncher.launchUrlMethod(Uri.parse('https://github.com/gustavolramos')),
+              icon: Image.asset('assets/images/logo-github-white.png'),
+              iconSize: 40,
+            ),
+            IconButton(
+              onPressed: () async => await urlLauncher.launchUrlMethod(Uri.parse('https://www.instagram.com/gustavolramos/')),
+              icon: Image.asset('assets/images/logo-instagram.png'),
+              iconSize: 40,
+            ),
+            IconButton(
+              onPressed: () async => await urlLauncher.launchUrlMethod(Uri.parse('https://twitter.com/gustavolramos')),
+              icon: Image.asset('assets/images/logo-x-white.png'),
+              iconSize: 30,
+            ),
           ],
         ),
       ),

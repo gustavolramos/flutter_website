@@ -10,7 +10,7 @@ class NavBarItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(children: [
-      Icon(icon),
+      Icon(icon, color: Colors.blueGrey),
       TextButton(
           onPressed: () {
             Navigator.of(context).push(MaterialPageRoute(builder: (context) => pagedestination));

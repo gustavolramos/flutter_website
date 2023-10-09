@@ -11,9 +11,9 @@ class MyNavigationDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
-        children: const <Widget>[
+        children:  <Widget>[
           NavigationDrawerHeader(),
-          SizedBox(
+          const SizedBox(
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

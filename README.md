@@ -1,14 +1,11 @@
-# my_first_website
+# My First Website
 
-In this project I try to exercise some basic but important Dart and Flutter concepts such as:
+In this project I showcase some basic but important Flutter concepts such as:
 
-- Altering the project`s font family, weight, etc
-- Utilizing the "Responsive Builder" package to achieve responsivity
-- Utilizing assets
-- Navigating through different pages
-- Re-utilizing Widgets through the app
-- Organizing project files, class names, variables, etc in a meaningful way
-- Hosting the Project with Firebase
+- Responsivity with the "Responsive Builder" package
+- Basic navigation
+- Widget composition
+- Hosting the Project with the Firebase Hosting service
 
 ## Requirements to run the project
 
@@ -20,7 +17,6 @@ Responsive Builder package (https://pub.dev/packages/shared_preferences)
 
 ### Disclaimer
 
-I created this alongisde a Filledstacks (https://www.youtube.com/@FilledStacks) video and improved
-things based on it.
+I based the template on a Filledstacks website I really liked (https://www.youtube.com/@FilledStacks)
 
 Feel free to give me feedback at any given time :)
