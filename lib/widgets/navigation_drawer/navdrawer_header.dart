@@ -7,7 +7,7 @@ class NavigationDrawerHeader extends StatelessWidget {
   final UrlLauncher urlLauncher = UrlLauncher();
 
   @override
-  Widget build(BuildContext context) {  
+  Widget build(BuildContext context) {
     return SizedBox(
       height: 100,
       child: DrawerHeader(
@@ -20,6 +20,11 @@ class NavigationDrawerHeader extends StatelessWidget {
               onPressed: () async => await urlLauncher.launchUrlMethod(Uri.parse('https://github.com/gustavolramos')),
               icon: Image.asset('assets/images/logo-github-white.png'),
               iconSize: 40,
+            ),
+            IconButton(
+              onPressed: () async => await urlLauncher.launchUrlMethod(Uri.parse('https://www.linkedin.com/in/gustavo-ramos/')),
+              icon: Image.asset('assets/images/logo-linkedin-square.png'),
+              iconSize: 45,
             ),
             IconButton(
               onPressed: () async => await urlLauncher.launchUrlMethod(Uri.parse('https://www.instagram.com/gustavolramos/')),

@@ -11,27 +11,36 @@ class MyNavigationDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
-        children:  <Widget>[
+        children: <Widget>[
           NavigationDrawerHeader(),
           const SizedBox(
-            height: 100,
+            height: 150,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
                   padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
-                  child: NavBarItem(
-                      icon: Icons.house,
-                      title: 'Home',
-                      pagedestination: HomePage()),
+                  child: NavBarItem(icon: Icons.house, title: 'Home', pagedestination: HomePage()),
                 ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
-                  child: NavBarItem(
-                      icon: Icons.info,
-                      title: 'About',
-                      pagedestination: AboutPage()),
+                  child: NavBarItem(icon: Icons.info, title: 'About', pagedestination: AboutPage()),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                  child: Row(
+                    children: [
+                      Icon(Icons.phone, color: Colors.blueGrey),
+                      SizedBox(width: 5),
+                      Text('+39 378 064 6525',
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black,
+                          ))
+                    ],
+                  ),
                 ),
               ],
             ),
