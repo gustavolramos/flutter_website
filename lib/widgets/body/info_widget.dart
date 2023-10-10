@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-class HomeInfo extends StatelessWidget {
-  const HomeInfo({super.key, required this.titleText, required this.bodyText});
+class InfoWidget extends StatelessWidget {
+  const InfoWidget({super.key, required this.titleText, required this.bodyText});
 
   final String titleText;
   final String bodyText;
@@ -11,7 +11,6 @@ class HomeInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
-        
         TextAlign textAlignment;
         if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
           textAlignment = TextAlign.left;
@@ -41,7 +40,7 @@ class HomeInfo extends StatelessWidget {
         }
 
         return Padding(
-          padding: const EdgeInsets.fromLTRB(0.0, 50.0, 0.0, 0.0),
+          padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
           child: SizedBox(
             width: 600,
             child: Column(
