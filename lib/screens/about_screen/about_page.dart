@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_website/screens/about_screen/about_content_desktop.dart';
-import 'package:my_first_website/widgets/body/centered_view.dart';
+import 'package:my_first_website/widgets/body/centered_view_widget.dart';
 import 'package:my_first_website/widgets/navigation_bar/navbar.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../../widgets/navigation_drawer/navdrawer.dart';
@@ -13,18 +13,15 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
-          drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
-              ? const MyNavigationDrawer()
-              : null,
+          drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile ? const MyNavigationDrawer() : null,
           backgroundColor: Colors.white,
           body: CenteredView(
-              child: Column(
-                  children: <Widget>[
-                    const NavBar(),
-                    Expanded(
-                        child: ScreenTypeLayout(
-                          mobile: const AboutContentMobile(),
-                          desktop: const AboutContentDesktop(),
+              child: Column(children: <Widget>[
+            const NavBar(),
+            Expanded(
+                child: ScreenTypeLayout(
+              mobile: const AboutContentMobile(),
+              desktop: const AboutContentDesktop(),
             )),
           ]))),
     );

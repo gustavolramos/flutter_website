@@ -1,66 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_builder/responsive_builder.dart';
+import 'package:my_first_website/widgets/body/image_widget.dart';
+import 'package:my_first_website/widgets/body/info_widget.dart';
 
 class AboutContentDesktop extends StatelessWidget {
   const AboutContentDesktop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveBuilder(
-      builder: (context, sizingInformation) {
-        TextAlign textAlignment;
-        if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
-          textAlignment = TextAlign.left;
-        } else {
-          textAlignment = TextAlign.left;
-        }
-
-        double titleSize;
-        if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
-          titleSize = 45;
-        } else {
-          titleSize = 60;
-        }
-
-        double descriptionSize;
-        if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
-          descriptionSize = 15;
-        } else {
-          descriptionSize = 21;
-        }
-
-        return Expanded(
+    return const Row(
+      children: [
+        Expanded(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'MY STORY',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        height: 1.0,
-                        fontSize: titleSize),
-                    textAlign: textAlignment,
-                  ),
-                  Text('I was born and raised in Balneário Camboriú, Brazil',
-                      style: TextStyle(
-                          fontWeight: FontWeight.w200,
-                          height: 1.7,
-                          fontSize: descriptionSize),
-                      textAlign: textAlignment),
-                ],
-              ),
-              const CircleAvatar(
-                  backgroundImage:
-                      AssetImage('assets/images/hotel-bella-camboriu.jpg'),
-                  radius: 125),
+              HomeInfo(titleText: 'MY STORY', bodyText: 'I was born and raised in Balneário Camboriú, Brazil'),
+              HomeImage(customAsset: 'assets/images/hotel-bella-camboriu.jpg'),
             ],
           ),
-        );
-      },
+        ),
+      ],
     );
   }
 }

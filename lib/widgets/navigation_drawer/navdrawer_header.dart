@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_website/utils/navigation.dart';
+import 'package:my_first_website/widgets/social/social_media_item.dart';
 
 class NavigationDrawerHeader extends StatelessWidget {
   NavigationDrawerHeader({Key? key}) : super(key: key);
@@ -16,24 +17,24 @@ class NavigationDrawerHeader extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            IconButton(
-              onPressed: () async => await urlLauncher.launchUrlMethod(Uri.parse('https://github.com/gustavolramos')),
-              icon: Image.asset('assets/images/logo-github-white.png'),
+            SocialMediaIcon(
+              url: 'https://github.com/gustavolramos',
+              assetLocation: 'assets/images/logo-github-white.png',
               iconSize: 40,
             ),
-            IconButton(
-              onPressed: () async => await urlLauncher.launchUrlMethod(Uri.parse('https://www.linkedin.com/in/gustavo-ramos/')),
-              icon: Image.asset('assets/images/logo-linkedin-square.png'),
+            SocialMediaIcon(
+              url: 'https://www.linkedin.com/in/gustavo-ramos/',
+              assetLocation: 'assets/images/logo-linkedin-square.png',
               iconSize: 45,
             ),
-            IconButton(
-              onPressed: () async => await urlLauncher.launchUrlMethod(Uri.parse('https://www.instagram.com/gustavolramos/')),
-              icon: Image.asset('assets/images/logo-instagram.png'),
+            SocialMediaIcon(
+              url: 'https://www.instagram.com/gustavolramos/',
+              assetLocation: 'assets/images/logo-instagram.png',
               iconSize: 40,
             ),
-            IconButton(
-              onPressed: () async => await urlLauncher.launchUrlMethod(Uri.parse('https://twitter.com/gustavolramos')),
-              icon: Image.asset('assets/images/logo-x-white.png'),
+            SocialMediaIcon(
+              url: 'https://twitter.com/gustavolramos',
+              assetLocation: 'assets/images/logo-x-white.png',
               iconSize: 30,
             ),
           ],
