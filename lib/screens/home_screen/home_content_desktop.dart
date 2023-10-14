@@ -34,8 +34,9 @@ class HomeContentDesktop extends StatelessWidget {
                       imageWidth: 280,
                     ),
                     InfoWidget(
-                        titleText: 'CAREER',
-                        bodyText: 'I worked in business roles for 4 years, starting in Inside Sales and then moving to Customer Success. \nI became a manager for both teams during this time.'),
+                      titleText: 'CAREER',
+                      bodyText: 'I worked in business roles for 4 years, starting in Inside Sales and then moving to Customer Success.',
+                    ),
                   ],
                 ),
                 const SizedBox(height: 70),
@@ -44,12 +45,12 @@ class HomeContentDesktop extends StatelessWidget {
                   children: [
                     const InfoWidget(
                         titleText: 'TECH.',
-                        bodyText: 'By working closely with Designers and Developers as a Product Manager, I realized how much I love tech.'),
+                        bodyText: 'After working closely with Designers and Developers as a Product Manager, I decided to move definitively to tech'),
                     HomeSquareImage(
                       customAsset: 'assets/images/flutter-white.png',
                       customSemanticLabel: 'Flutter logo',
                       customBackgroundColor: Colors.lightBlue.shade50,
-                      customBorderColor: Colors.lightBlue,
+                      customBorderColor: Colors.lightBlue.shade50,
                       customPadding: 10,
                       imageHeight: 120,
                       imageWidth: 200,

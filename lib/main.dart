@@ -16,10 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Gustavo\'s Flutter WS',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Open Sans'),
-      ),
-      home: const HomePage(),
+      theme: ThemeData(textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Open Sans')),
+      home: HomePage(),
     );
   }
 }

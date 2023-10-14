@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_website/utils/navigation.dart';
-import 'package:my_first_website/widgets/social/social_media_item.dart';
+import 'package:my_first_website/widgets/others_widgets/social_media_item.dart';
 
 class NavigationDrawerHeader extends StatelessWidget {
   NavigationDrawerHeader({Key? key}) : super(key: key);

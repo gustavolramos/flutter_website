@@ -7,23 +7,27 @@ import 'package:responsive_builder/responsive_builder.dart';
 import '../../widgets/navigation_drawer/navdrawer.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  HomePage({Key? key}) : super(key: key);
+
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
-          drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile ? const MyNavigationDrawer() : null,
-          backgroundColor: Colors.white,
-          body: CenteredView(
-              child: Column(children: <Widget>[
-            const NavBar(),
-            Expanded(
-                child: ScreenTypeLayout(
-              mobile: const HomeContentMobile(),
-              desktop: const HomeContentDesktop(),
-            )),
-          ]))),
+        key: _scaffoldKey,
+        drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile ? const MyNavigationDrawer() : null,
+        backgroundColor: Colors.white,
+        body: CenteredView(
+            child: Column(children: <Widget>[
+          const NavBar(),
+          Expanded(
+              child: ScreenTypeLayout(
+            mobile: const HomeContentMobile(),
+            desktop: const HomeContentDesktop(),
+          )),
+        ])),
+      ),
     );
   }
 }
