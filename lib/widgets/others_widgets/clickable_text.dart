@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:my_first_website/utils/content_clipper.dart';
 import 'package:my_first_website/utils/custom_snackbar.dart';
 
-
 class ClickableTextWidget extends StatefulWidget {
   ClickableTextWidget({super.key, required this.text});
 

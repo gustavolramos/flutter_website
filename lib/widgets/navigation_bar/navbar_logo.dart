@@ -8,8 +8,9 @@ class NavBarLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return IconButton(
       onPressed: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) =>  HomePage()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) =>  const HomePage()));
       },
+      tooltip: 'Home',
       icon: Image.asset('assets/images/logo-flutter.png'),
       iconSize: 36,
       splashRadius: 30,

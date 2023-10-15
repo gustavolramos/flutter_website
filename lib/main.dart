@@ -8,16 +8,22 @@ main() async {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Gustavo\'s Flutter WS',
+      title: 'Gustavo\'s Flutter Website',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Open Sans')),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

@@ -32,8 +32,8 @@ class HomeContentMobile extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           const InfoWidget(
-              titleText: 'TECH.',
-              bodyText: 'After working closely with Designers and Developers as a Product Manager, I decided to move definitively to tech'),
+              titleText: 'TECH',
+              bodyText: 'After working closely with Designers and Developers as a Product Manager, I decided to move definitively to tech.'),
           HomeSquareImage(
             customAsset: 'assets/images/flutter-white.png',
             customSemanticLabel: 'Flutter logo',
