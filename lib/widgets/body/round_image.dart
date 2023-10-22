@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeRoundImage extends StatelessWidget {
-  const HomeRoundImage({super.key, required this.customAsset});
+class RoundImage extends StatelessWidget {
+  const RoundImage({super.key, required this.customAsset});
 
   final String customAsset;
 

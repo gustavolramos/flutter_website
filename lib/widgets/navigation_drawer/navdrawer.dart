@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_website/screens/about_screen/about_page.dart';
-import 'package:my_first_website/screens/home_screen/home_page.dart';
+import 'package:my_first_website/pages/projects/projects_page.dart';
+import 'package:my_first_website/pages/home/home_page.dart';
 import 'package:my_first_website/widgets/navigation_drawer/navdrawer_header.dart';
 import 'package:my_first_website/widgets/others_widgets/clickable_text.dart';
 import '../navigation_bar/navbar_item.dart';
@@ -14,19 +14,19 @@ class MyNavigationDrawer extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           NavigationDrawerHeader(),
-           SizedBox(
+          SizedBox(
             height: 150,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                 const Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                   child: NavBarItem(icon: Icons.house, title: 'Home', pagedestination: HomePage()),
                 ),
                 const Padding(
                   padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
-                  child: NavBarItem(icon: Icons.info, title: 'About', pagedestination: AboutPage()),
+                  child: NavBarItem(icon: Icons.info, title: 'Projects', pagedestination: AboutPage()),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
@@ -34,7 +34,7 @@ class MyNavigationDrawer extends StatelessWidget {
                     children: [
                       const Icon(Icons.phone, color: Colors.blueGrey),
                       const SizedBox(width: 5),
-                      ClickableTextWidget(text: '+39 378 064 6525'),
+                      ClickableTextWidget(text: '+39 378 064 6525', parentContext: context),
                     ],
                   ),
                 ),

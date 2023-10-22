@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_website/widgets/body/round_image_widget.dart';
-import 'package:my_first_website/widgets/body/info_widget.dart';
+import 'package:my_first_website/widgets/body/round_image.dart';
+import 'package:my_first_website/widgets/body/text_info.dart';
 
 class AboutContentMobile extends StatelessWidget {
   const AboutContentMobile({Key? key}) : super(key: key);
@@ -11,9 +11,9 @@ class AboutContentMobile extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          InfoWidget(titleText: 'MY STORY', bodyText: 'I was born and raised in Balneário Camboriú, Brazil'),
+          TextInfo(titleText: 'MY STORY', bodyText: 'I was born and raised in Balneário Camboriú, Brazil'),
           SizedBox(height: 50),
-          HomeRoundImage(customAsset: 'assets/images/hotel-bella-camboriu.jpg'),
+          RoundImage(customAsset: 'assets/images/hotel-bella-camboriu.jpg'),
         ],
       ),
     );

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../screens/home_screen/home_page.dart';
+import '../../pages/home/home_page.dart';
 
 class NavBarLogo extends StatelessWidget {
   const NavBarLogo({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class NavBarLogo extends StatelessWidget {
       tooltip: 'Home',
       icon: Image.asset('assets/images/logo-flutter.png'),
       iconSize: 36,
-      splashRadius: 30,
+      hoverColor: Colors.grey,
     );
   }
 }

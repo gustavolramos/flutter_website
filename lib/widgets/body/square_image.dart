@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeSquareImage extends StatelessWidget {
-  const HomeSquareImage({
+class SquareImage extends StatelessWidget {
+  const SquareImage({
     super.key,
     required this.customAsset,
     this.customSemanticLabel,

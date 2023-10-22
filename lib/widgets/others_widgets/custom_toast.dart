@@ -20,9 +20,7 @@ class _CustomToastWidgetState extends State<CustomToastWidget> {
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(Icons.check),
-          SizedBox(
-            width: 12.0,
-          ),
+          SizedBox(width: 12.0),
           Text("This is a Custom Toast"),
         ],
       ),

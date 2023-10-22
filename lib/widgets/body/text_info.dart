@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-class InfoWidget extends StatelessWidget {
-  const InfoWidget({super.key, required this.titleText, required this.bodyText});
+class TextInfo extends StatelessWidget {
+  const TextInfo({super.key, required this.titleText, required this.bodyText});
 
   final String titleText;
   final String bodyText;

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_website/utils/content_clipper.dart';
-import 'package:my_first_website/utils/custom_snackbar.dart';
+import 'package:my_first_website/widgets/others_widgets/custom_snackbar.dart';
 
 class ClickableTextWidget extends StatefulWidget {
-  ClickableTextWidget({super.key, required this.text});
+  ClickableTextWidget({super.key, required this.text, required this.parentContext});
 
   final String text;
   final ContentClipper contentClipper = ContentClipper();
   final CustomSnackBar customSnackBar = CustomSnackBar();
+  final BuildContext parentContext;
 
   @override
   ClickableTextWidgetState createState() => ClickableTextWidgetState();
@@ -32,7 +33,7 @@ class ClickableTextWidgetState extends State<ClickableTextWidget> {
       child: GestureDetector(
         onTap: () {
           widget.contentClipper.copyToClipboard(widget.text);
-          widget.customSnackBar.showCopiedSnackBar('Copied', context);
+          widget.customSnackBar.showCopiedSnackBar('Copied', widget.parentContext);
         },
         child: Row(
           children: [

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_website/utils/navigation.dart';
+import 'package:my_first_website/utils/url_launcher.dart';
 
-class SocialMediaIcon extends StatelessWidget {
-  SocialMediaIcon({super.key, required this.url, required this.assetLocation, required this.iconSize});
+class SocialMediaItem extends StatelessWidget {
+  SocialMediaItem({super.key, required this.url, required this.assetLocation, required this.iconSize});
 
   final String url;
   final String assetLocation;
@@ -15,6 +15,7 @@ class SocialMediaIcon extends StatelessWidget {
       onPressed: () async => await urlLauncher.launchUrlMethod(Uri.parse(url)),
       icon: Image.asset(assetLocation),
       iconSize: iconSize,
+      splashRadius: 5,
     );
   }
 }

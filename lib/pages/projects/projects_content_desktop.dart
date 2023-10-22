@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_website/widgets/body/round_image_widget.dart';
-import 'package:my_first_website/widgets/body/info_widget.dart';
+import 'package:my_first_website/widgets/body/round_image.dart';
+import 'package:my_first_website/widgets/body/text_info.dart';
 
 class AboutContentDesktop extends StatelessWidget {
   const AboutContentDesktop({Key? key}) : super(key: key);
@@ -13,8 +13,8 @@ class AboutContentDesktop extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              InfoWidget(titleText: 'MY STORY', bodyText: 'I was born and raised in Balneário Camboriú, Brazil'),
-              HomeRoundImage(customAsset: 'assets/images/hotel-bella-camboriu.jpg'),
+              TextInfo(titleText: 'MY STORY', bodyText: 'I was born and raised in Balneário Camboriú, Brazil'),
+              RoundImage(customAsset: 'assets/images/hotel-bella-camboriu.jpg'),
             ],
           ),
         ),

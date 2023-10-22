@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
 class NavBarItem extends StatelessWidget {
-  const NavBarItem({Key? key, required this.icon, required this.title, required this.pagedestination}) : super(key: key);
+  const NavBarItem({Key? key, this.icon, required this.title, required this.pagedestination}) : super(key: key);
 
-  final IconData icon;
+  final IconData? icon;
   final String title;
   final Widget pagedestination;
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: [
+    return Row(
+      children: [
       Icon(icon, color: Colors.blueGrey),
       TextButton(
           onPressed: () {
