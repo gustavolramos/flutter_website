@@ -15,8 +15,7 @@ class HomePage extends StatelessWidget {
       builder: (context, sizingInformation) => Scaffold(
         drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile ? const MyNavigationDrawer() : null,
         body: CenteredView(
-            child: Column(
-              children: <Widget>[
+            child: Column(children: <Widget>[
           const NavBar(),
           Expanded(
               child: ScreenTypeLayout(

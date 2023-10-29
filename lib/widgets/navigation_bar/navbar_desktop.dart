@@ -9,20 +9,19 @@ class NavBarDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const Padding(
+    return const Padding(
       padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-            children: [
+          Row(children: [
             NavBarLogo(),
           ]),
           Row(
             children: [
               CustomPopUpMenu(),
               SizedBox(width: 10),
-              NavBarItem(title: 'Projects', pagedestination: AboutPage()),
+              NavBarItem(title: 'Projects', pagedestination: ProjectsPage()),
             ],
           )
         ],

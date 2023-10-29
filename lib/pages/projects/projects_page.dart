@@ -6,8 +6,8 @@ import 'package:responsive_builder/responsive_builder.dart';
 import '../../widgets/navigation_drawer/navdrawer.dart';
 import 'projects_content_mobile.dart';
 
-class AboutPage extends StatelessWidget {
-  const AboutPage({Key? key}) : super(key: key);
+class ProjectsPage extends StatelessWidget {
+  const ProjectsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +19,8 @@ class AboutPage extends StatelessWidget {
             const NavBar(),
             Expanded(
                 child: ScreenTypeLayout(
-              mobile: const AboutContentMobile(),
-              desktop: const AboutContentDesktop(),
+              mobile: ProjectsContentMobile(),
+              desktop: const ProjectsContentDesktop(),
             )),
           ]))),
     );

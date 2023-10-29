@@ -8,6 +8,7 @@ class RoundImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
+      backgroundColor: Colors.black,
       radius: 120,
       child: ClipOval(
         child: Image.asset(

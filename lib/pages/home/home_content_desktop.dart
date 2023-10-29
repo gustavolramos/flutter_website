@@ -31,7 +31,6 @@ class HomeContentDesktop extends StatelessWidget {
                     SquareImage(
                       customAsset: 'assets/images/coblue-event.jpg',
                       customSemanticLabel: 'Flutter logo',
-                      customBorderColor: Colors.black,
                       customPadding: 0,
                       imageHeight: 210,
                       imageWidth: 280,
@@ -54,7 +53,6 @@ class HomeContentDesktop extends StatelessWidget {
                       customAsset: 'assets/images/flutter-white.png',
                       customSemanticLabel: 'Flutter logo',
                       customBackgroundColor: Colors.lightBlue.shade50,
-                      customBorderColor: Colors.lightBlue.shade50,
                       customPadding: 10,
                       imageHeight: 120,
                       imageWidth: 200,

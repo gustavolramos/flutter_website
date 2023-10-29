@@ -26,7 +26,7 @@ class MyNavigationDrawer extends StatelessWidget {
                 ),
                 const Padding(
                   padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
-                  child: NavBarItem(icon: Icons.info, title: 'Projects', pagedestination: AboutPage()),
+                  child: NavBarItem(icon: Icons.info, title: 'Projects', pagedestination: ProjectsPage()),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),

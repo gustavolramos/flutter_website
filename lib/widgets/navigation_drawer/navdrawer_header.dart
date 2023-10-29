@@ -13,7 +13,7 @@ class NavigationDrawerHeader extends StatelessWidget {
       height: 100,
       child: DrawerHeader(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-        decoration: const BoxDecoration(color: Colors.blueGrey),
+        decoration: const BoxDecoration(color: Colors.lightBlue),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
