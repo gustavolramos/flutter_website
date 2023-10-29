@@ -15,6 +15,7 @@ class ClickableTextWidget extends StatefulWidget {
 }
 
 class ClickableTextWidgetState extends State<ClickableTextWidget> {
+  
   bool isHovered = false;
   Color? hoverColor;
 
@@ -38,19 +39,15 @@ class ClickableTextWidgetState extends State<ClickableTextWidget> {
         child: Row(
           children: [
             Text(widget.text,
+            softWrap: true,
                 style: TextStyle(
                   fontSize: 18.0,
                   fontWeight: FontWeight.w400,
                   color: Colors.black,
                   backgroundColor: hoverColor,
-                )),
+                ),
+                ),
             const SizedBox(width: 5),
-            if (isHovered)
-              const Text('Copy',
-                  style: TextStyle(
-                    fontSize: 12.0,
-                    color: Colors.blue,
-                  )),
           ],
         ),
       ),

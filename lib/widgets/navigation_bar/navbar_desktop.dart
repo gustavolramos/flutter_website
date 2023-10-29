@@ -9,7 +9,7 @@ class NavBarDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
+    return  const Padding(
       padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

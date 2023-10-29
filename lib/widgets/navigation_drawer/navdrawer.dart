@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:my_first_website/pages/projects/projects_page.dart';
 import 'package:my_first_website/pages/home/home_page.dart';
@@ -15,7 +17,7 @@ class MyNavigationDrawer extends StatelessWidget {
         children: <Widget>[
           NavigationDrawerHeader(),
           SizedBox(
-            height: 150,
+            height: 180,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,6 +37,17 @@ class MyNavigationDrawer extends StatelessWidget {
                       const Icon(Icons.phone, color: Colors.blueGrey),
                       const SizedBox(width: 5),
                       ClickableTextWidget(text: '+39 378 064 6525', parentContext: context),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Icon(Icons.email, color: Colors.blueGrey),
+                      const SizedBox(width: 5),
+                      Expanded(child: ClickableTextWidget(text: 'gustavoloureiroramos\n@gmail.com', parentContext: context)),
                     ],
                   ),
                 ),
