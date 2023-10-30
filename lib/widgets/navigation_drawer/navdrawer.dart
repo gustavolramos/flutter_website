@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:my_first_website/pages/projects/projects_page.dart';
 import 'package:my_first_website/pages/home/home_page.dart';

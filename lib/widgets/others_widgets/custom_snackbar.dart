@@ -4,7 +4,6 @@ class CustomSnackBar {
   void showCopiedSnackBar(String text, BuildContext context) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        margin: const EdgeInsets.fromLTRB(350, 0, 20, 530),
         behavior: SnackBarBehavior.floating,
         backgroundColor: Colors.blue,
         padding: const EdgeInsets.all(10),

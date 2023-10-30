@@ -64,9 +64,9 @@ class _CustomPopUpMenuState extends State<CustomPopUpMenu> {
               SocialMediaItem(
                 url: 'https://twitter.com/gustavolramos',
                 assetLocation: 'assets/images/logo-x-black.png',
-                iconSize: 8,
+                iconSize: 10,
               ),
-              const Text('Twitter'),
+              const Text('Twitter/X'),
             ],
           ),
         ),
