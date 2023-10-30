@@ -33,7 +33,7 @@ class MyNavigationDrawer extends StatelessWidget {
                   child: Row(
                     children: [
                       const Icon(Icons.phone, color: Colors.blueGrey),
-                      const SizedBox(width: 5),
+                      const SizedBox(width: 6),
                       ClickableTextWidget(text: '+39 378 064 6525', parentContext: context),
                     ],
                   ),
@@ -44,7 +44,7 @@ class MyNavigationDrawer extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Icon(Icons.email, color: Colors.blueGrey),
-                      const SizedBox(width: 5),
+                      const SizedBox(width: 6),
                       Expanded(child: ClickableTextWidget(text: 'gustavoloureiroramos\n@gmail.com', parentContext: context)),
                     ],
                   ),
