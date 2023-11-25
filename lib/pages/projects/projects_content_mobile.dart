@@ -43,7 +43,7 @@ class ProjectsContentMobile extends StatelessWidget {
                 const Expanded(
                     child: TextInfo(
                   titleText: 'TCG Calculator',
-                  bodyText: 'This app let\'s you build a deck of cards and calculate probabilities',
+                  bodyText: 'This app let\'s you build a deck of cards and calculate probabilities',desktopTitleSize: 60, desktopDescriptionSize: 15,
                 )),
               ],
             ),
@@ -77,7 +77,7 @@ class ProjectsContentMobile extends StatelessWidget {
                 const Expanded(
                     child: TextInfo(
                   titleText: 'Language Translation',
-                  bodyText: 'This app is a Google Translate clone',
+                  bodyText: 'This app is a Google Translate clone',desktopTitleSize: 60, desktopDescriptionSize: 15,
                 )),
               ],
             ),
@@ -111,7 +111,7 @@ class ProjectsContentMobile extends StatelessWidget {
                 const Expanded(
                     child: TextInfo(
                   titleText: 'Riverpod Userlist',
-                  bodyText: 'This one communicates with an API to show a list of users, and their details.',
+                  bodyText: 'This one communicates with an API to show a list of users, and their details.',desktopTitleSize: 60, desktopDescriptionSize: 15,
                 )),
               ],
             ),
@@ -145,7 +145,7 @@ class ProjectsContentMobile extends StatelessWidget {
                 const Expanded(
                     child: TextInfo(
                   titleText: 'Dog Travel Permission',
-                  bodyText: 'In order to know which airline companies accept my dogs, I made this mini-app',
+                  bodyText: 'In order to know which airline companies accept my dogs, I made this mini-app',desktopTitleSize: 60, desktopDescriptionSize: 15,
                 )),
               ],
             ),

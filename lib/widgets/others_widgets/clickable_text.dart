@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_website/utils/content_clipper.dart';
-import 'package:my_first_website/widgets/others_widgets/custom_snackbar.dart';
 
 class ClickableTextWidget extends StatefulWidget {
   ClickableTextWidget({super.key, required this.text, required this.parentContext});
 
   final String text;
   final ContentClipper contentClipper = ContentClipper();
-  final CustomSnackBar customSnackBar = CustomSnackBar();
   final BuildContext parentContext;
 
   @override
@@ -15,7 +13,6 @@ class ClickableTextWidget extends StatefulWidget {
 }
 
 class ClickableTextWidgetState extends State<ClickableTextWidget> {
-  
   bool isHovered = false;
   Color? hoverColor;
 
@@ -25,7 +22,7 @@ class ClickableTextWidgetState extends State<ClickableTextWidget> {
       cursor: SystemMouseCursors.click,
       onEnter: (_) => setState(() {
         isHovered = true;
-        hoverColor = Colors.grey.shade200;
+        hoverColor = Colors.grey.shade300;
       }),
       onExit: (_) => setState(() {
         isHovered = false;
@@ -34,20 +31,10 @@ class ClickableTextWidgetState extends State<ClickableTextWidget> {
       child: GestureDetector(
         onTap: () {
           widget.contentClipper.copyToClipboard(widget.text);
-          widget.customSnackBar.showCopiedSnackBar('Copied', widget.parentContext);
         },
         child: Row(
           children: [
-            Text(widget.text,
-            softWrap: true,
-                style: TextStyle(
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black,
-                  backgroundColor: hoverColor,
-                ),
-                ),
-            const SizedBox(width: 5),
+            Text(widget.text, style: Theme.of(context).textTheme.bodyMedium!.copyWith(backgroundColor: hoverColor))
           ],
         ),
       ),

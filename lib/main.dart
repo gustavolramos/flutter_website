@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_website/pages/home/home_page.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:my_first_website/utils/routing.dart';
+import 'package:my_first_website/utils/theme.dart';
 import 'firebase_options.dart';
 
 main() async {
@@ -19,11 +20,11 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Gustavo\'s Flutter Website',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Open Sans')),
-      home: const HomePage(),
+      theme: lightTheme,
+      routerConfig: router,
     );
   }
 }

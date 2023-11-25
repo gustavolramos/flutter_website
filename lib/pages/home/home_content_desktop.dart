@@ -19,7 +19,7 @@ class HomeContentDesktop extends StatelessWidget {
                   children: [
                     TextInfo(
                       titleText: 'WELCOME',
-                      bodyText: 'My name is Gustavo Ramos, I am a 26-year-old Flutter Developer and Product Manager.',
+                      bodyText: 'My name is Gustavo Ramos, I am a 26-year-old Flutter Developer and Product Manager.',desktopTitleSize: 60, desktopDescriptionSize: 25,
                     ),
                     RoundImage(customAsset: 'assets/images/new-gustavo-profile.jpg'),
                   ],
@@ -37,7 +37,7 @@ class HomeContentDesktop extends StatelessWidget {
                     ),
                     TextInfo(
                       titleText: 'CAREER',
-                      bodyText: 'I worked in business roles for 4 years, starting in Inside Sales and then moving to Customer Success.',
+                      bodyText: 'I worked in business roles for 4 years, starting in Inside Sales and then moving to Customer Success.',desktopTitleSize: 60, desktopDescriptionSize: 25,
                     ),
                   ],
                 ),
@@ -48,7 +48,7 @@ class HomeContentDesktop extends StatelessWidget {
                     const TextInfo(
                         titleText: 'TECH',
                         bodyText:
-                            'After working closely with Designers and Developers as a Product Manager, I decided to move definitively to tech.'),
+                            'After working closely with Designers and Developers as a Product Manager, I decided to move definitively to tech.', desktopTitleSize: 60, desktopDescriptionSize: 25), 
                     SquareImage(
                       customAsset: 'assets/images/flutter-white.png',
                       customSemanticLabel: 'Flutter logo',
