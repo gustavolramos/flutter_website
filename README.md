@@ -3,7 +3,7 @@
 In this project I showcase some basic but important Flutter concepts such as:
 
 - Responsivity with the "Responsive Builder" package
-- Basic navigation
+- Navigation using the "Go Router" package
 - Widget composition
 - Hosting the Project with the Firebase Hosting service
 
