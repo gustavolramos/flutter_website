@@ -14,6 +14,40 @@ class ProjectsContentMobile extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+                    Padding(
+            padding: const EdgeInsets.fromLTRB(0, 8, 0, 20),
+            child: Row(
+              children: [
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const SquareImage(
+                      customAsset: 'assets/images/logo_full_red_bag.png',
+                      customPadding: 10,
+                      imageWidth: 100,
+                      imageHeight: 100,
+                    ),
+                    ElevatedButton(
+                        onPressed: () async => await urlLauncher.launchUrlMethod(
+                              Uri.parse('https://github.com/jsappsbr/Economiza-SC'),
+                            ),
+                        child: const Row(
+                          children: [
+                            Icon(Icons.ads_click),
+                            SizedBox(width: 5),
+                            Text('Repo'),
+                          ],
+                        )),
+                  ],
+                ),
+                const Expanded(
+                    child: TextInfo(
+                  titleText: 'Economiza SC',
+                  bodyText: 'This supermarket app compares prices to help customers save money',desktopTitleSize: 60, desktopDescriptionSize: 15,
+                )),
+              ],
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 8, 0, 20),
             child: Row(
