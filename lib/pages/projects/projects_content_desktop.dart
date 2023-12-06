@@ -27,6 +27,20 @@ class ProjectsContentDesktop extends StatelessWidget {
             desktopTitleSize: 30, desktopDescriptionSize: 15,
           ),
         ),
+                GridItem(
+          squareImage: const SquareImage(
+            customAsset: 'assets/images/logo-blocks.png',
+            customPadding: 20,
+            imageHeight: 100,
+            imageWidth: 100,
+          ),
+          url: 'https://github.com/gustavolramos/blocks_game',
+          textInfo: const TextInfo(
+            titleText: 'Blocks Game',
+            bodyText: 'This is a game of falling blocks that accumulate points',
+            desktopTitleSize: 30, desktopDescriptionSize: 15,
+          ),
+        ),
         GridItem(
           squareImage: const SquareImage(
             customAsset: 'assets/images/logo_calculator.png',

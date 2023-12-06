@@ -48,6 +48,40 @@ class ProjectsContentMobile extends StatelessWidget {
               ],
             ),
           ),
+                              Padding(  // CHANGE HERE 
+            padding: const EdgeInsets.fromLTRB(0, 8, 0, 20),
+            child: Row(
+              children: [
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const SquareImage(
+                      customAsset: 'assets/images/logo-blocks.png',
+                      customPadding: 10,
+                      imageWidth: 100,
+                      imageHeight: 100,
+                    ),
+                    ElevatedButton(
+                        onPressed: () async => await urlLauncher.launchUrlMethod(
+                              Uri.parse('https://github.com/gustavolramos/blocks_game'),
+                            ),
+                        child: const Row(
+                          children: [
+                            Icon(Icons.ads_click),
+                            SizedBox(width: 5),
+                            Text('Repo'),
+                          ],
+                        )),
+                  ],
+                ),
+                const Expanded(
+                    child: TextInfo(
+                  titleText: 'Blocks Game',
+                  bodyText: 'This is a game of falling blocks that accumulate points',desktopTitleSize: 60, desktopDescriptionSize: 15,
+                )),
+              ],
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 8, 0, 20),
             child: Row(
